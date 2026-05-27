@@ -10,9 +10,14 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/CuasStatus.msg"
-  "msg/CuasTargetAlert.msg"
-  "msg/CuasCommand.msg"
+  "msg/C2Command.msg"
+  "msg/TargetTrack.msg"
+  "msg/InterceptMission.msg"
+  "msg/InterceptorStatus.msg"
+  "msg/InterceptProgress.msg"
+  "msg/EngagementResult.msg"
+  "msg/MissionAck.msg"
+  "msg/FaultReport.msg"
   DEPENDENCIES builtin_interfaces
 )
 
