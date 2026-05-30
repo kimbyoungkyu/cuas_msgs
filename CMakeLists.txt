@@ -18,6 +18,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/EngagementResult.msg"
   "msg/MissionAck.msg"
   "msg/FaultReport.msg"
+  "msg/GeoPosition.msg"
+  "msg/VelocityNED.msg"
+  "msg/InterceptorHeartbeat.msg"
   DEPENDENCIES builtin_interfaces
 )
 
